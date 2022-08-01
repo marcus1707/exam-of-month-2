@@ -1,0 +1,104 @@
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 825px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #373F68;
+    border-radius: 10px;
+
+    &__link{
+        margin-left: 24px;
+        margin-right: 16px;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__suggestion {
+        margin-right: 38px;
+        text-decoration: none;
+        font-family: 'Jost';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        color: $bgcolor;
+    }
+
+    &__filter {
+        position: relative;
+        text-decoration: none;
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F2F4FE;
+    }
+
+    &__button {
+        @include button;
+
+        &:hover {
+            background-color: #C75AF6;
+        }
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .header {
+        width: 689px;
+        margin-bottom: 24px;
+
+        &__button {
+            margin-left: 141px;
+        }
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .header {
+        width: 375px;
+        height: 56px;
+        margin-bottom: 32px;
+        padding: 8px 24px;
+        background-color: #373F68;
+        border-radius: 0;
+
+        &__link {
+            display: none;
+        }
+
+        &__suggestion {
+            display: none;
+        }
+
+        &_-filter {
+            font-family: 'Jost';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 19px;
+            color: #F2F4FE;
+        }
+
+        &__button {
+            margin-left: 44px;
+            height: 40px;
+            width: 134px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: $btncolor;
+            font-family: 'Jost';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 19px;
+            color: #F2F4FE;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.empty {
+    width: 825px;
+    height: 600px;
+    padding: 110px 207px;
+    background-color: $bgcolor;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-top: 58px;
+        margin-bottom: 16px;
+        font-family: 'Jost';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        color: #3A4374;
+    }
+
+    &__text {
+        margin-bottom: 48px;
+        @include text;
+    }
+
+    &__button {
+        @include button;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width:759px) {
+    .empty {
+        height: 600px;
+        width: 689px;
+        padding: 110px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .empty {
+        width: 327px;
+        height: 460px;
+        margin: 0 auto;
+        padding: 76px 25px;
+
+        &__icon {
+            margin-bottom: 43px;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-family: 'Jost';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #3A4374;
+        }
+
+        &__text {
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-family: 'Jost';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 19px;
+            color: #647196;
+        }
+
+        &__button {
+            height: 40px;
+            width: 134px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: $btncolor;
+            font-family: 'Jost';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 19px;
+            color: $F2color;
+        }
+
+    }   
+
+
+}

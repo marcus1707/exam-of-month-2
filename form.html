@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <div class="wrapper__top">
+            <a class="wrapper__top--link" href="./index.html">
+                <
+            </a>
+            <a class="wrapper__top--back" href="./index.html">
+                Go Back
+            </a>
+            <span class="wrapper__top--plus">
+                <b>+</b>
+            </span>
+        </div>
+        <div class="wrapper__bottom">
+            <h2 class="wrapper__bottom--title">
+                Create New Feedback
+            </h2>
+            <form class="wrapper__bottom--form" action="echo.htmlacademy.ru" method="post">
+                <label for="title" class="wrapper__bottom--form--title"><br>
+                    Feedback Title
+                </label>
+                <label for="text" class="wrapper__bottom--form--text"><br>
+                    Add a short, descriptive headline
+                </label>
+                <input class="wrapper__bottom--form--feedback" type="text" name="feedback">
+                <label for="title" class="wrapper__bottom--form--title"><br>
+                    Category
+                </label>
+                <label for="text" class="wrapper__bottom--form--text"><br>
+                    Choose a category for your feedback
+                </label>
+                <select class="wrapper__bottom--form--feature" name="Feature" id="lang">
+                    <option class="wrapper__bottom--form--feature" value="Feature">Feature</option>
+                    <option class="wrapper__bottom--form--feature wrapper__bottom--form--ui" value="UI">UI</option>
+                    <option class="wrapper__bottom--form--feature wrapper__bottom--form--ux" value="UX">UX</option>
+                    <option class="wrapper__bottom--form--feature wrapper__bottom--form--enhancement" value="enhancement">Enhancement</option>
+                    <option class="wrapper__bottom--form--feature wrapper__bottom--form--bug" value="bug">Bug</option>
+                  </select>
+                    Feedback Detail
+                </label>
+                <label for="text" class="wrapper__bottom--form--text"><br>
+                    Include any specific comments on what should be improved, added, etc.
+                </label>
+                <textarea class="wrapper__bottom--form--textarea" required></textarea>
+                <button class="wrapper__bottom--form--cancel" type="reset">
+                    Cancel
+                </button>
+                <button class="wrapper__bottom--form--submit" type="submit" value="Submit">
+                    Add Feedback
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

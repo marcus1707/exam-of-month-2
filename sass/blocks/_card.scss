@@ -1,0 +1,184 @@
+.main {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__card {
+        width: 825px;
+        height: 151px;
+        display: flex;
+        background: $bgcolor;
+        border-radius: 10px;
+        padding: 28px 32px;
+
+        &--left {
+            height: 53px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #F2F4FE;
+            border-radius: 10px;
+
+            &--vector {
+                margin-top: 10px;
+                margin-bottom: 0;
+                color: $bluebg;
+            }
+
+            &--rank {
+                margin-top: 0;
+                margin-bottom: 8px;
+                font-family: 'Jost';
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 19px;
+                color: #3A4374;
+            }
+        }
+
+        &--center {
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            &--title {
+                font-family: 'Jost';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                color: #3A4374;
+            }
+
+            &--text {
+                margin-bottom: 12px;
+                font-family: 'Jost';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: #647196;
+            }
+
+            &--bottom1 {
+                width: 111px;
+                height: 30px;
+                padding: 5px 16px;
+                border-radius: 10px;
+                background: #F2F4FF;
+                text-decoration: none;
+                font-family: 'Jost';
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 19px;
+                color: $bluebg;
+            }
+
+            &--bottom2 {
+                width: 77px;
+                height: 30px;
+                padding: 5px 16px;
+                border-radius: 10px;
+                background: #F2F4FF;
+                text-decoration: none;
+                font-family: 'Jost';
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 19px;
+                color: $bluebg;
+            }
+
+            &--bottom3 {
+                width: 56px;
+                height: 30px;
+                padding: 5px 16px;
+                border-radius: 10px;
+                background: #F2F4FF;
+                text-decoration: none;
+                font-family: 'Jost';
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 19px;
+                color: $bluebg;
+            }
+        }
+
+        &--right {
+            display: flex;
+            align-items: center;
+
+            &--img {
+                height: 16px;
+                width: 18px;
+            }
+
+            &--number {
+                margin-left: 8px;
+                font-family: 'Jost';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: -0.222222px;
+                color: #3A4374;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .main {
+        gap: 16px;
+
+        &__card {
+            width: 689px;
+        }
+    } 
+}
+
+@media only screen and (max-width:440px) {
+    .main {
+        gap: 16px;
+        margin: 0 auto;
+
+        &__card {
+            width: 327px;
+            height: 200px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            background: $bgcolor;
+            border-radius: 10px;
+
+            &--left {
+                position: relative;
+                top: 120px;
+                width: 69px;
+                height: 32px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &--vector {
+                    margin-left: 10px;
+                    margin-right: 20px;
+                }
+            }
+
+            &--center {
+                position: relative;
+                margin: 0;
+                top: -45px;
+            }
+
+            &--right {
+                position: relative;
+                left: 250px;
+                top: -20px;
+            }
+
+        }
+    }    
+}

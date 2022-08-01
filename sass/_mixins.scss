@@ -1,0 +1,44 @@
+@mixin text {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+}
+
+@mixin number {
+    font-family: "Jost";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+}
+
+@mixin button {
+    height: 44px;
+    width: 158px;
+    border-radius: 10px;
+    margin-left: 290px;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: $btncolor;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F2F4FE;
+
+    &:hover {
+        background-color: #C75AF6;
+    }
+}
+
+@mixin feature {
+    height: 48px;
+    width: 456px;
+    border-radius: 5px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
